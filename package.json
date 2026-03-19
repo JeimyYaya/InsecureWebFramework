@@ -1,0 +1,25 @@
+{
+  "name": "api-node-goat",
+  "version": "0.0.1",
+  "description": "A simple Express.JS REST API application that shows a number of common OWASP Top 10 CWEs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server.js",
+    "test": "mocha test/*.js",
+    "test-iast": "mocha --require ./.iast/agent_linux64.node test/*.js"
+  },
+  "author": "Rob Layzell",
+  "license": "ISC",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "express": "^4.16.4",
+    "fs-extra": "^8.1.0",
+    "node-serialize": "0.0.4",
+    "should": "^13.2.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^4.0.2"
+  }
+}
